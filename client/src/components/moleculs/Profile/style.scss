@@ -1,0 +1,96 @@
+@import "./../../../styles/variables";
+
+.app--active {
+
+  .profile {
+
+    &__name {
+      max-width: 70px;
+      width: 100%;
+      display: block;
+      word-wrap: break-word;
+    }
+
+    &__list {
+      cursor: pointer;
+      max-width: 150px;
+      width: 100%;
+      margin-left: auto;
+      position: relative;
+      top: -0.9375rem;
+      right: -0.313rem;
+    }
+
+    &__meta {
+      align-items: center;
+
+      .ant-list-item-meta-title {
+        font-size: $font-size;
+      }
+    }
+
+    @media(max-width: 767px) {
+
+      &__list {
+        right: -4.313rem;
+      }
+
+      &__meta {
+
+        .ant-list-item-meta-title {
+          opacity: 0;
+        }
+      }
+    }
+
+    @media (max-width: 575px) {
+
+      &__list {
+        right: -5.313rem;
+      }
+
+      .ant-list-item {
+        padding-left: 1rem;
+      }
+    }
+  }
+
+}
+
+
+.drawer {
+
+  &__section {
+    font-size: 1.2rem!important;
+    line-height: 1.5rem;
+    margin-bottom: $default-margin;
+  }
+
+  &__avatar {
+
+    .profile-avatar-wrapper {
+      width: 150px;
+      height: 150px;
+    }
+
+    .profile-avatar {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 100%;
+    }
+  }
+
+  &__remove-btn {
+    position: absolute;
+    bottom: 35px;
+    right: 22px;
+  }
+}
+
+.ant-drawer-content-wrapper {
+
+  @media (max-width: 767px) {
+    width: auto!important;
+  }
+}

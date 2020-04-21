@@ -1,0 +1,23 @@
+@import "./../../../styles/variables";
+
+
+.subscribe-btn {
+  border-radius: 0.250rem;
+  color: $white;
+  padding: 0.625rem 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: none;
+  background: $red;
+
+  &--subscribe {
+    background: #AAAAAA;
+  }
+
+  @media(max-width: 575px) {
+    font-size: 0.75rem;
+    padding: 0.313rem 0.5rem;
+  }
+}
+

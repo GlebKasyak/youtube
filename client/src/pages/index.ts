@@ -1,0 +1,9 @@
+export { default as Home } from "./HomePage/Home";
+export { default as About } from "./About";
+export { default as UploadVideoPage } from "./UploadVideoPage/UploadVideoPageContainer";
+export { default as DetailVideoPage } from "./DetailVideoPage/DetailVideoPageContainer";
+export { default as SubscriptionPage } from "./SubscriptionPage/SubscriptionPage";
+export { default as UsersPage } from "./UsersPage/UsersPageContainer";
+export { default as ResultsPage } from "./ResultsPage/ResultsPage";
+export { default as CategoryPage } from "./CategoryPage/CategoryPage";
+export { default as Page404 } from "./Page404/Page404";

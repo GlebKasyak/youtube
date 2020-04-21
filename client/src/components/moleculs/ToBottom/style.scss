@@ -1,0 +1,46 @@
+@import "../../../styles/variables";
+
+.to-bottom {
+
+  &--visible {
+    opacity: 1;
+  }
+
+  &--hidden {
+    display: none;
+  }
+
+  background-color: rgba(0, 0, 0, 0.45);
+  color: $white;
+  z-index: 2;
+  position: fixed;
+  left: 100px;
+  top: 58px;
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ;
+  opacity: 0;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.65)!important;
+    color: $white;
+    border: none;
+  }
+
+  @media (max-width: 767px) {
+    left: 60px;
+  }
+
+  @media (max-width: 481px) {
+    right: 1rem;
+    left: auto;
+    top: 140px;
+  }
+}
+
+@media (max-width: 481px) {
+  .ant-back-top {
+    right: 1rem;
+    z-index: 2;
+  }
+}

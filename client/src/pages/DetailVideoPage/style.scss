@@ -1,0 +1,81 @@
+@import "../../styles/variables";
+
+.detail-page-container {
+  margin-top: $default-margin + 2;
+
+  .video-detail-page {
+    width: 100%;
+    padding: 6rem 4rem 1rem;
+
+    &__title {
+      font-size: 1.125rem;
+    }
+
+    &__description {
+      font-size: 1rem;
+    }
+
+    &__title, &__description {
+      word-wrap: break-word;
+    }
+
+    &__views {
+      color: $blue;
+    }
+
+    .ant-list-item-meta-content {
+      width: 80%;
+    }
+
+    &__videos {
+      margin-top: 6rem;
+    }
+
+    @media (max-width: 991px) {
+      &__videos {
+        padding: 0 4rem;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0;
+      }
+    }
+
+    @media (max-width: 767px) {
+      &__videos {
+        display: block;
+      }
+    }
+
+    @media (max-width: 575px) {
+      &__title {
+        font-size: 1rem;
+      }
+
+      &__description {
+        font-size: 0.875rem;
+
+        & > span {
+          display: none;
+        }
+      }
+
+      &__videos {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    @media(max-width: 470px) {
+      .ant-list-item-action {
+        width: 100%;
+        text-align: right;
+      }
+    }
+
+  }
+
+  .ant-list-item-meta {
+    width: 50%;
+  }
+
+}

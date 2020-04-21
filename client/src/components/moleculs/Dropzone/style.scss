@@ -1,0 +1,26 @@
+@import "./../../../styles/variables";
+
+.dropzone {
+  @extend %display-flex-center;
+  margin-bottom: $default-margin;
+
+  width: 300px;
+  height: 240px;
+  border: 1px solid lightgray;
+
+  &__icon {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 767px) {
+
+    width: 240px;
+    height: 160px;
+  }
+
+  @media (max-width: 575px) {
+
+    width: 160px;
+    height: 100px;
+  }
+}

@@ -1,0 +1,89 @@
+@import "./../../../styles/variables";
+
+.comment-form {
+  $self: &;
+  display: flex;
+
+  &__textarea {
+    width: 100%;
+  }
+
+  &__btn-wrapper {
+    position: relative;
+    display: flex;
+
+    #{ $self }__button,  #{ $self }__cancel  {
+      display: flex;
+      justify-content: center;
+      align-self: flex-end;
+    }
+
+    #{ $self }__button {
+      margin-bottom: 0.25rem;
+    }
+
+    #{ $self }__cancel {
+      margin: 0 $default-margin 0.25rem;
+    }
+
+    #{ $self }__emoji-picker {
+      position: absolute;
+      bottom: 75px;
+      right: 0;
+      z-index: 1;
+    }
+
+    #{ $self }__smile-btn {
+      position: absolute;
+      right: 135px;
+      top: -20px;
+    }
+  }
+
+
+  @media (max-width: 575px) {
+    flex-direction: column;
+
+    &__btn-wrapper {
+
+      #{ $self }__button,  #{ $self }__cancel {
+        width: 50%;
+        margin-top: 0.5rem;
+      }
+
+      #{ $self }__cancel {
+        margin: 0 $default-margin 0 0;
+      }
+
+      #{ $self }__button {
+        margin-bottom: 0;
+      }
+
+      #{ $self }__smile-btn {
+        right: -40px;
+        top: -98px;
+      }
+
+      #{ $self }__emoji-picker {
+        bottom: 110px;
+      }
+    }
+
+    .emoji-mart.emoji-mart-light {
+      width: 220px!important;
+    }
+  }
+
+  @media (max-width: 350px) {
+
+    &__btn-wrapper {
+
+      #{ $self }__smile-btn {
+        top: -31px;
+        right: -40px;
+      }
+    }
+
+  }
+}
+

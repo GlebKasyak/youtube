@@ -1,0 +1,26 @@
+@import "./../../../styles/variables";
+
+.ant-popover {
+  max-width: 50%;
+
+  .ant-popover-inner-content, .ant-popover-title {
+    word-wrap: break-word;
+  }
+}
+
+.popover {
+  display: none;
+
+  &__close-btn {
+    color: $red;
+  }
+
+  &__read-more {
+    width: max-content;
+    color: $black;
+  }
+
+  @media(max-width: 1199px) {
+    display: block;
+  }
+}

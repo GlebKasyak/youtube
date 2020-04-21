@@ -1,0 +1,99 @@
+@import "./../../../styles/variables";
+
+.video-card {
+  $self: &;
+
+  #{ $self }-image-wrapper {
+    position: relative;
+
+    &__image {
+      width: 100%;
+    }
+
+    &__duration {
+      position: absolute;
+      bottom: 0.25rem;
+      right: 0;
+      padding: 0.125rem 0.25rem;
+      border-radius: 0.125rem;
+      letter-spacing: 0.5px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      line-height: 0.75rem;
+      background-color: rgba(17, 17, 17, 0.8);
+      color: $white;
+    }
+  }
+
+  &__name {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  &__name, &__title {
+    word-wrap: break-word;
+  }
+
+  &__title {
+    font-size: 1.125rem;
+  }
+
+  &__views {
+    color: $blue;
+    margin-left: 3rem;
+
+    &:after {
+      position: relative;
+      top: -0.125rem;
+      left: 0.1rem;
+      margin: 0 0.125rem;
+      content: " ";
+      display: inline-block;
+      width: 0.25rem;
+      height: 0.25rem;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.65);
+    }
+  }
+
+  &__info {
+    margin: $default-margin 0;
+  }
+
+  &.detail-page {
+    padding: 0 0.5rem;
+
+    margin-bottom: $default-margin;
+
+    #{ $self }__info {
+      margin: 0.5rem 0 0 0;
+
+      #{ $self }__avatar {
+        display: none;
+      }
+    }
+
+    #{ $self }__views {
+      margin-left: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    #{ $self }__date {
+      display: none;
+    }
+
+    @media (max-width: 767px) {
+      justify-content: center;
+      margin: auto;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    width: 80%;
+    margin: 0 10%;
+  }
+}

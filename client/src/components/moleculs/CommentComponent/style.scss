@@ -1,0 +1,22 @@
+@import "./../../../styles/variables";
+
+.comment {
+
+  &__name {
+    font-weight: 500;
+    color: $black;
+    font-size: 1rem;
+  }
+
+  &__content {
+    font-size: 1rem;
+  }
+
+  &__replay-to {
+    margin-left: 0.5rem;
+  }
+
+  &__time, &__replay-to {
+    font-size: 0.875rem!important;
+  }
+}

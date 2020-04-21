@@ -1,0 +1,19 @@
+@import "./../../styles/variables";
+
+.category-page {
+
+  .tag {
+    margin-left: $default-margin;
+
+    &--hide {
+      display: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__title {
+      font-size: 1.25rem!important;
+    }
+  }
+}
+

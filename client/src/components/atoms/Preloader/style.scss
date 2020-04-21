@@ -1,0 +1,31 @@
+@import "../../../styles/variables";
+
+
+.preloader {
+  height: 100vh;
+  flex-direction: column!important;
+  font-size: $font-size;
+
+  @extend %display-flex-center;
+
+  &--scroll-loader {
+    height: auto;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.app--not-active {
+
+  .preloader {
+    height: auto;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+

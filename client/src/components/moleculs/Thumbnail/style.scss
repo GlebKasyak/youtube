@@ -1,0 +1,30 @@
+
+.thumbnail {
+  position: relative;
+
+  .preloader {
+    height: 100%!important;
+  }
+
+  &__image {
+    width: 320px;
+    height: 240px;
+    object-fit: cover;
+  }
+
+  @media (max-width: 767px) {
+
+    &__image {
+      width: 240px;
+      height: 160px;
+    }
+  }
+
+  @media (max-width: 575px) {
+
+    &__image {
+      width: 160px;
+      height: 100px;
+    }
+  }
+}

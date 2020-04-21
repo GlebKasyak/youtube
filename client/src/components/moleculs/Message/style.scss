@@ -1,0 +1,41 @@
+@import "./../../../styles/variables";
+
+.app--not-active {
+
+  .message {
+    display: none;
+  }
+}
+
+.app--active {
+
+  .message {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 102px;
+
+    .icon-wrapper {
+      @extend %display-flex-center;
+
+      font-size: 1.5rem;
+      cursor: pointer;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: $white;
+      box-shadow: 0 3px 6px -4px rgba(0,0,0,.12), 0 6px 16px 0 rgba(0,0,0,.08), 0 9px 28px 8px rgba(0,0,0,.05);
+    }
+  }
+}
+
+
+.message-drawer {
+
+  @media (max-width: 767px) {
+
+    .ant-drawer-content-wrapper {
+      max-width: 300px;
+      width: 100%!important;
+    }
+  }
+}

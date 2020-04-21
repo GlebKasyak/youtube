@@ -1,0 +1,25 @@
+@import "./../../../styles/variables";
+
+.category-menu-container {
+
+  &__switch {
+    position: absolute;
+    top: 65px;
+  }
+
+  .category-menu {
+    transition: ease-out 0.3s;
+    width: 200px;
+    position: absolute;
+    top: 104px;
+    left: -80px;
+
+    &--show {
+      left: 0;
+    }
+
+    &__btn {
+      margin-bottom: $default-margin;
+    }
+  }
+}
